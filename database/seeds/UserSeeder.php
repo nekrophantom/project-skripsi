@@ -16,15 +16,15 @@ class UserSeeder extends Seeder
         \App\Models\User::insert([
             [ 
                 'nama' => 'Administrator',
-                'email' => '',
+                'email' => 'superadmin@gmail.com',
                 'username'=> 'admin',
                 'password' => bcrypt('12345678'), // password
                 'role' => 'admin'
             ],
             [ 
-                'nama' => 'test',
-                'email' => 'test@gmail.com',
-                'username'=> 'test',
+                'nama' => 'reynold',
+                'email' => 'reynold@gmail.com',
+                'username'=> 'reynold',
                 'password' => bcrypt('12345678'), // password
                 'role' => 'user'
             ]
