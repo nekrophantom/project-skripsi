@@ -33,6 +33,24 @@
         </div>
         @include('layouts.partials.notification')
         <div class="card">
+            <div class="card-head">
+                <table  class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="text-center">Dummy account</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dummy (admin) : admin</td>
+                            <td>Dummy (user) : reynold</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-center">Password : 12345678</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <div class="body">
                 <form  method="POST" action="{{ URL::to('login/dologin') }}">
                     @csrf
